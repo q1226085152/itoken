@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      label: master
+      uri: http://localhost:8888
+      name: itoken-cloud-config
+      profile: dev
+      server:
+        git:
+          uri: https://github.com/q1226085152/itoken
+          username:
+          password:
+          search-paths: itoken-cloud-config/respo
+
+
+server:
+  port: 8888
